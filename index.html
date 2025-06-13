@@ -1,0 +1,9 @@
+<!-- payment.html -->
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+  Telegram.WebApp.ready();
+  Telegram.WebApp.expand();
+
+  // Открываем модальное окно оплаты
+  Telegram.WebApp.openInvoice("your_invoice_slug");
+</script>
