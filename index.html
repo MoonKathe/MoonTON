@@ -2,11 +2,77 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>MoonTON</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonTON Casino</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle, #0f0f0f, #000000);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .button {
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #1f1f1f;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+      transition: transform 0.1s ease;
+    }
+
+    .button:hover {
+      background: #2a2a2a;
+      transform: scale(1.03);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 12px;
+      opacity: 0.4;
+    }
+  </style>
 </head>
-<body style="background-color: #111; color: #fff; text-align:center; padding:50px;">
-  <h1>MoonTON работает!</h1>
-  <p>Если ты это видишь — значит всё грузится.</p>
+<body>
+  <h1>🎰 MoonTON Casino</h1>
+  <button class="button" onclick="startSlot()">Слот-машина</button>
+  <button class="button" onclick="startDice()">Кости</button>
+  <button class="button" onclick="startRoulette()">Рулетка</button>
+  <div class="footer">v0.1 - тестовый режим</div>
+
+  <script>
+    Telegram.WebApp.ready();
+
+    function startSlot() {
+      alert("🎰 Слот-машина запускается...");
+    }
+
+    function startDice() {
+      alert("🎲 Бросаем кости...");
+    }
+
+    function startRoulette() {
+      alert("🎯 Крутим рулетку...");
+    }
+  </script>
 </body>
 </html>
