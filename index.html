@@ -2,56 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Telegram Web App</title>
+  <title>MoonTON</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f4f4f4;
-      padding: 50px;
-    }
-    .container {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      display: inline-block;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background-color: #0088cc;
-      color: white;
-      cursor: pointer;
-    }
-  </style>
 </head>
-<body>
-
-  <div class="container">
-    <h2>Добро пожаловать в Telegram Web App!</h2>
-    <p id="username">Загрузка данных пользователя...</p>
-    <button onclick="MainButtonClicked()">Нажми меня</button>
-  </div>
-
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script>
-    const tg = window.Telegram.WebApp;
-    tg.expand();
-
-    // Показываем имя пользователя
-    const user = tg.initDataUnsafe.user;
-    document.getElementById("username").innerText = 
-      `Привет, ${user?.first_name || "гость"}!`;
-
-    // Отправка события при нажатии
-    function MainButtonClicked() {
-      tg.sendData("Кнопка нажата!");
-    }
-  </script>
-
+<body style="background-color: #111; color: #fff; text-align:center; padding:50px;">
+  <h1>MoonTON работает!</h1>
+  <p>Если ты это видишь — значит всё грузится.</p>
 </body>
 </html>
